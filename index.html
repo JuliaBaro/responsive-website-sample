@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Jeffrey's Toys</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+                 
+<body>
+  <!--sticky-navigation bar-->
+  <nav class="sticky-top" style="background-color: white;">
+    <div class="row" style="margin-top: 3em;">
+
+      <!--logo-->
+      <div class="col-md-12 text-center">
+        <h1>JEFFREY'S TOYS</h1>
+      </div>
+    </div>
+    <div class="row" style="margin-bottom: 3em;">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-1">
+        <form class="form-inline">
+          <input class="form-control" type="search" placeholder="SEARCH" aria-label="Search" style="outline: 0; border: 0; border-radius: 0; border-bottom: 1px solid rgb(224, 224, 224);">
+          <button class="btn border-0 ml-n2" type="button" style="margin-top: -3em;">
+            <i class="fa fa-search" style="color: rgb(172, 172, 172); margin-left: 10em; position: absolute"></i>
+          </button>
+        </form>
+      </div>
+      <div class="col-md-7"></div>
+
+      <!--sign in button-->
+      <div class="col-md-1">
+        <div style="margin-top: 1em; margin-left: 1em; white-space: nowrap" role="button">SIGN IN</div>
+      </div>
+
+      <!--cart popup-->
+      <div class="col-md-1">   
+        <div class="dropdown"> 
+        <a class="dropbtn" href="#" role="button" id="cart" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="cart.jpg" alt="Cart Icon"></a><!--style="margin-top: -1em;"-->
+          <div class="dropdown-content" style="right:0; float: right;" aria-labelledby="cart">
+            <div class="row" style="margin: 2em; width: 20rem;">
+              <h4>YOUR CART</h4>
+              <div style="margin: 1em;">
+                <p class="text-nowrap">
+                <img src="cart-photo.jpg" class="img-fluid z-depth-1" alt="Cart Icon" style="float: left; margin-right: 1.5em;">
+                HAPPY TRAILS<br>ROSCKING HORSE $79.99<br>QTY: 1</p>
+              </div>
+              <hr class="mt-2 col-sm-10">
+              <div style="margin: 1em;">
+                <p class="text-nowrap">
+                <img src="cart-photo.jpg" class="img-fluid z-depth-1" alt="Cart Icon" style="float: left; margin-right: 1.5em;">
+                PRISM DESIGN<br>STUNT KITE $29.99<br>QTY: 1</p>
+              </div>
+              <hr class="mt-2 col-sm-10">
+              <p>SUBTOTAL $108.98</p>
+              <br>
+              <button type="button" class="btn btn-dark btn-lg">CHECKOUT NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="col-sm-1"></div>
+  </div>
+
+    <!--sticky main menu-->
+    <hr class="mt-2 col-sm-10"> 
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SHOP
+              </a>
+              <div class="dropdown-menu" style="right:100; left:auto;" aria-labelledby="dropdownMenuLink">
+                <div class="row ">
+                  <div>
+                    <a class="dropdown-item" href="#">NEW ARRIVALS</a>
+                    <a class="dropdown-item" href="#">RECOMMENDED</a>
+                    <a class="dropdown-item" href="#">POPULAR</a>
+                    <br>
+                    <a class="dropdown-item" href="#">SHOP BY BRAND</a>
+                    <a class="dropdown-item" href="#">SHOP BY AGE</a>
+                  </div>
+                  <div>
+                    <a class="dropdown-item" href="#">ACTION FIGURES</a>
+                    <a class="dropdown-item" href="#">ARTS & CRAFTS</a>
+                    <a class="dropdown-item" href="#">BUILDING SETS & KITS</a>
+                    <a class="dropdown-item" href="#">COSTUMES & PRETEND PLAY</a>
+                    <a class="dropdown-item" href="#">DOLLS & DOLL HOUSES</a>
+                    <a class="dropdown-item" href="#">GAMES & PUZZLES</a>
+                    <a class="dropdown-item" href="#">INSTRUMENTS</a>
+                  </div>
+                  <div>
+                    <a class="dropdown-item" href="#">LEARNING TOYS</a>
+                    <a class="dropdown-item" href="#">MAGIC</a>
+                    <a class="dropdown-item" href="#">NOVELTY & RETRO</a>
+                    <a class="dropdown-item" href="#">SPORTS & OUTDOORS</a>
+                    <a class="dropdown-item" href="#">STUFFED TOYS</a>
+                    <a class="dropdown-item" href="#">VEHICLES</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">NEWS & EVENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACTS</a>
+            </li>
+           </ul>
+          </div>
+        </nav>  
+      <hr class="mt-2 col-sm-10"> 
+    </nav>
+
+    <!--product photos-->
+    <div class="row" style="margin-top: 3em;">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5 mb-3">
+        <p>HOME / ALL TOYS / ROCKING HORSE</p>
+        <img src="big-product.jpg" class="img-fluid z-depth-1" alt="Big Product Image">
+        <div class="row" style="margin-top: 1em; justify-content: center">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-3 col-sm-3 mb-5">
+            <img src="small-product.jpg" class="img-fluid z-depth-1" alt="Small Product Image 1">
+          </div>
+          <div class="col-lg-3 col-sm-3 mb-5">
+            <img src="small-product.jpg" class="img-fluid z-depth-1" alt="Small Product Image 2">
+          </div>
+          <div class="col-lg-3 col-sm-3 mb-5">
+            <img src="small-product.jpg" class="img-fluid z-depth-1" alt="Small Product Image 3">
+          </div>
+          <div class="col-lg-1"></div> 
+        </div>
+      </div>
+
+      <!--product description-->
+      <div class="col-md-5">
+        <p>HAPPY TRAILS</p>
+        <h1>ROCKING HORSE</h1>
+        <h1>$78.99</h1>
+        <div>
+            <h1>☆☆☆☆☆</h1>
+        </div>
+        <p>Be the first to write a review</p>
+        <p>Rockin' Rider Derby is a soft stuffed plush rocking horse with a sturdy metal frame. 
+          He sits on a beautiful wooden base. With a press of his ears he sings the exclusive "I'm a little pony" 
+          Song, says fun phrases, and makes realistic horse sounds. 
+        </p>
+        <p>AGE: 3-7 +</p>
+        <label for="quantity">QTY<br>
+          <select id="quantity">
+            <option value="1">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </label>
+        <br>
+        <button type="button" class="btn btn-dark btn-lg">ADD TO CART</button>
+        <br>
+        <p style="padding-top: 1em">SHARE</p>
+      </div>
+    </div>
+
+    <!--you may also like-->
+    <div class="container">
+      <h4 class="text-center mb-5">YOU MIGHT ALSO LIKE</h4>
+        <div class="row">
+          <div class="col-md-3 mb-5">
+            <div class="thumbnail">
+              <img src="you-may-also-like.jpg" alt="Also Like Image 1" class="img-fluid">
+              <div class="caption text-left">
+                <p>
+                  SOFT TEDDY BEAR<br>
+                  JELLYCAT<br>
+                  $32.99
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-5">
+            <div class="thumbnail">
+              <img src="you-may-also-like.jpg" alt="Also Like Image 2" class="img-fluid">
+              <div class="caption text-left">
+                <p>
+                  CABBAGE PATCH DOLL<br>
+                  CABBAGE PATCH KIDS<br>
+                  $34.99
+                </p>
+              </div>
+            </div>
+          </div>   
+          <div class="col-md-3 mb-5">
+            <div class="thumbnail">
+              <img src="you-may-also-like.jpg" alt="Also Like Image 3" class="img-fluid">
+              <div class="caption text-left">
+                <p>
+                  MICKEY MOUSE SOFT TOY<br>
+                  DISNEY<br>
+                  $24.99<br>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-5">
+            <div class="thumbnail">
+              <img src="you-may-also-like.jpg" alt="Also Like Image 4" class="img-fluid">
+              <div class="caption text-left">
+                <p>
+                  TEDDY RUXPIN<br>
+                  HASBRO<br>
+                  $69.99
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+ 
+    <!--costumer reviews-->
+    <div class="text-center">
+        <h4>COSTUMER REVIEWS</h4>
+        <p>No reviews yet, be the first to write a review!</p>
+        <button type="button" class="btn btn-dark btn-lg mb-5">WRITE A REVIEW</button>
+    </div>
+    <hr class="mt-2 mb-5 col-sm-10">
+  </body>
+
+  <!--footer-->
+  <footer>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-2"></div> 
+          <div class="col-sm mb-5">
+            <ul style="list-style-type:none">
+              <li>COSTUMER SERVICE</li>
+              <hr class="mt-2 col-sm-18" style="border: 2px solid black;"> 
+              <li>ABOUT</li>
+              <li>CONTACT</li>
+              <li>NEWS & EVENTS</li>
+              <li>RETURNS</li>
+            </ul>
+          </div>
+          <div class="col-sm mb-5">
+            <ul style="list-style-type:none">
+              <li>VISIT OUR STORE</li>
+              <hr class="mt-2 col-sm-18" style="border: 2px solid black;"> 
+              <li>45 KEARNY ST.</li>
+              <li>SAN FRANCISCO, CA</li>
+              <li>(415) 291 - 8697</li>
+              <br>
+              <li>MONDAY-FRIDAY 9:00-8:00</li>
+              <li>SATURDAY 10:00-7:00</li>
+              <li>SUNDAY 10:00-6:00</li>
+            </ul>
+          </div>
+          <div class="col-sm mb-5">
+            <ul style="list-style-type:none">
+              <li>CONNECT WITH US</li>
+              <hr class="mt-2 col-sm-18" style="border: 2px solid black;"> 
+              <li>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-2"></div> 
+        </div>
+      </div>
+  </footer>
+
+</html>
